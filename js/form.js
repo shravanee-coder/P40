@@ -44,8 +44,8 @@ class Form{
             this.greeting.style('font-size', '100px');
         });
 
-        this.reset.mousePressed(() => {
-           player.playerCount(0);
+        this.reset.mousePressed(() =>{
+           player.updateCount(0);
            game.update(0);
            var playerInfoRef = database.ref('players')
            playerInfoRef.remove();
